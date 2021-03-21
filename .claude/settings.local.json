@@ -1,0 +1,10 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(git checkout:*)",
+      "Bash(git rm:*)",
+      "Bash(git add:*)",
+      "Bash(GIT_AUTHOR_DATE=\"2021-03-21 14:31:17 +0900\" GIT_COMMITTER_DATE=\"2021-03-21 14:31:17 +0900\" git commit -m \"[init] 프로젝트 초기화\")"
+    ]
+  }
+}
