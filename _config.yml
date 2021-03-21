@@ -1,0 +1,65 @@
+# Site wide configuration
+
+title: "Jinsun-Lee"
+description: "This is a description of my awesome site."
+logo: site_logo_120_120.jpg
+teaser: tesaser_400_250.jpg
+locale: en_US
+url: "https://jinsun-lee.github.io"
+feed:
+  path: atom.xml
+
+# Jekyll configuration
+
+sass:
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
+kramdown:
+  toc_levels: 1..2
+highlighter: rouge
+plugins:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
+
+
+# Site owner
+owner:
+  name: "Jinsun-Lee"
+  web: "withire32@kakao.com"
+  twitter: 
+  bio: "Just a developer who wants to be good at what I love to do."
+  avatar: "jinsun_160_160.jpg" # 160x160 px image for author byline
+  google:
+    plus: #"+MichaelRoseDesign"
+    ad-client: #"ca-pub-7328585512091257"
+    ad-slot: #3049671934
+  disqus-shortname:
+
+
+include:
+  - .htaccess
+exclude:
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp
