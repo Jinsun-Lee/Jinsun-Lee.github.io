@@ -2,10 +2,6 @@
 # If you don't have language feature(language.yml is empty), ignore "i18n" items
 # Suggest projects' img be located at '/static/assets/img/landing', and edit following img items.
 
-
-
-
-
 - name: 2023.02.27 ~ 2025.02 성균관대학교 석사 졸업(예정)
   gh_user: Jinsun-Lee
   desc: 전재욱 교수님 Automation Lab의 Vision Software 팀
