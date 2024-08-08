@@ -8,3 +8,4 @@ A Jekyll Theme, based on the Uno-Theme with a list of projects as Timeline.
   * [Site settings source](https://github.com/Jinsun-Lee/Jinsun-Lee.github.io/blob/master/_config.yml) is `_config.yml`
   * [Timeline information source](https://github.com/Jinsun-Lee/Jinsun-Lee.github.io/blob/master/_data/projects.yml) is `_data/projects.yaml`
   * 
+![image](https://github.com/user-attachments/assets/17dff8e7-4659-42c9-a25b-b214294acb86)
