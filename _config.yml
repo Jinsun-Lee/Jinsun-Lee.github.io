@@ -1,36 +1,64 @@
-# Site settings
-title: Jinsun-Lee
-description: 'Divide and Conquer'
-url: 'https://jinsun-lee.github.io'
-baseurl: ''
-profilepic: '/images/sun.jpg'
-bkimage: '/images/bk1.jpg'
-google_analytics: UA-XXXXXX-X
-font_awesome: '91805d646c.js'
+# Site wide configuration
 
-author:
-  name: 'Jinsun-Lee'
-  email: withire32@kakao.com
-#  twitter_username: whatif1g0
-#  facebook_username: joshgerdes
-  github_username:  Jinsun-Lee
-  linkedin_username:  진선-이-308193269
-#  meetup_name: Azure-Meetup-Rostock-MV
+title: "Jinsun-Lee"
+description: "This is a description of my awesome site."
+logo: site_logo.jpg
+teaser: tesaser.jpg
+locale: en
+url: https://jinsun-lee.github.io
+feed:
+  path: atom.xml
 
-# Build settings
-destination: _site
-markdown: kramdown
-highlighter: rouge
+# Jekyll configuration
 
 sass:
-    sass_dir: _sass
-    style: compressed
-
+  sass_dir: _sass
+  style: compressed
+permalink: /:categories/:title/
 kramdown:
-  # use Github Flavored Markdown
-  input: GFM
-  # do not replace newlines by <br>s
-  hard_wrap: false
+  toc_levels: 1..2
+highlighter: rouge
+plugins:
+  - jekyll-sitemap
+  - jekyll-gist
+  - jekyll-feed
 
-#plugins: ['jekyll-paginate']
-exclude: ['README.md', 'screenshot-overview.png']
+
+# Site owner
+owner:
+  name: Jinsun-Lee
+  email: withire32@kakao.com
+  twitter:
+  google:
+    ad-client:
+    ad-slot:
+  bio:
+  avatar: bio-photo.jpg # 160x160 px image for author byline
+  disqus-shortname:
+
+
+include:
+  - .htaccess
+exclude:
+  - "*.less"
+  - "*.sublime-project"
+  - "*.sublime-workspace"
+  - .asset-cache
+  - .bundle
+  - .jekyll-assets-cache
+  - .sass-cache
+  - CHANGELOG
+  - Capfile
+  - Gemfile
+  - Gruntfile.js
+  - LICENSE
+  - README
+  - Rakefile
+  - config
+  - gulpfile.js
+  - lib
+  - log
+  - node_modules
+  - package.json
+  - spec
+  - tmp

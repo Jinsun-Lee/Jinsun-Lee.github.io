@@ -1,60 +1,55 @@
 ---
+sitemap: false
 ---
-@import "uno";
-@import "tables";
-@import "monokai";
-@import "timeline";
 
-/* Modifications */
+/*
+ *
+ *  Skinny Bones Jekyll Starter
+ *
+ *  Designer: Michael Rose
+ *  Twitter: http://twitter.com/mmistakes
+ *
+*/
 
-pre.highlight,
-.highlight pre {
-  padding: 10px;
-}
+@import "variables";
 
-pre.highlight code,
-.highlight pre code {
-  white-space: pre-wrap;
-}
+/*
+   Vendor
+   ========================================================================== */
 
-.btn,
-.navigation__item a {
-  margin: 5px 0;
-  white-space: nowrap;
-}
+@import "vendor/bourbon/bourbon";
+@import "grid-settings";
+@import "vendor/neat/neat";
+@import "vendor/font-awesome/font-awesome";
 
-.pagination__page-number {
-  display: inline-block;
-  padding: 10px;
-}
+/*
+   Global
+   ========================================================================== */
 
-.categories a,
-.tags a {
-  border: 1px solid #e25440;
-  border-radius: 20px;
-  color: #e25440;
-  display: inline-block;
-  font-size: 12px;
-  margin: 5px 0;
-  padding: 5px 10px;
-  text-shadow: none;
-  white-space: nowrap;
-}
+@import "mixins";
+@import "reset";
+@import "base";
 
-.post-meta__tags {
-  font-size: 12px;
-  padding: 0 5px;
-}
+/*
+   Components
+   ========================================================================== */
 
-.footer__copyright {
-    margin: 0 20px 10px;
-}
+@import "helpers";
+@import "buttons";
+@import "badges";
+@import "bullets";
+@import "sliding-menu";
+@import "menu-navicons"; /* animated 3 line menu icon */
+@import "notices";
+@import "animations";
+@import "tiles";
+@import "footnotes";
+@import "toc"; /* table of contents */
+@import "breadcrumbs";
+@import "syntax";
 
-.user-image {
-  margin-bottom: 1.2em;
-  position: relative;
-  width: 100px;
-  height: 100px;
-  border: 3px solid #fff;
-  border-radius:100%;
-}
+/*
+   Page specific
+   ========================================================================== */
+
+@import "layout";

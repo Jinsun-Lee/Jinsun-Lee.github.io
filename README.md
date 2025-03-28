@@ -1,11 +1,23 @@
-## Jekyll-Uno with Projects as Timeline
-A Jekyll Theme, based on the Uno-Theme with a list of projects as Timeline.  
-원본 https://github.com/tzuehlke/jekyll-uno-timeline  
-데모 [Demo](http://thomas.zuehlke.family/)  
+# Skinny Bones Jekyll Starter
 
-# Update Manual
-  * My Site: https://jinsun-lee.github.io
-  * [Site settings source](https://github.com/Jinsun-Lee/Jinsun-Lee.github.io/blob/master/_config.yml) is `_config.yml`
-  * [Timeline information source](https://github.com/Jinsun-Lee/Jinsun-Lee.github.io/blob/master/_data/projects.yml) is `_data/projects.yaml`
-  * 
-![image](https://github.com/user-attachments/assets/17dff8e7-4659-42c9-a25b-b214294acb86)
+Just a little something I'm using to jump start a site refresh. I like to think of it as a starter for building your own Jekyll site. I purposely keep the styling minimal and bare to make it easier to add your own flare and markup.
+
+![screenshot of Skinny Bones](http://mmistakes.github.io/jekyll-theme-skinny-bones/images/skinny-bones-theme-feature.jpg)
+
+---
+
+## Notable Features
+
+* Jekyll 3.x and GitHub Pages compatible.
+* Stylesheet built using Sass.
+* Data files for easier customization of the site navigation/footer and for supporting multiple authors.
+* Optional Disqus comments, table of contents, social sharing links, and Google AdSense ads.
+* And more.
+
+## More Jekyll Themes
+
+Check out my more popular Jekyll themes, available as Ruby gems and 100% GitHub Pages compatible.
+
+* [Minimal Mistakes](https://github.com/mmistakes/minimal-mistakes)
+* [So Simple](https://github.com/mmistakes/so-simple-theme)
+* [Basically Basic](https://github.com/mmistakes/jekyll-theme-basically-basic)
