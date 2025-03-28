@@ -1,11 +1,11 @@
 # Site wide configuration
 
-title: "Skinny Bones"
-description: "A lightweight site starter for Jekyll"
-logo: 120x120.gif
-teaser: 400x250.gif
+title: "Jinsun-Lee"
+description: "This is a description of my awesome site."
+logo: site_logo_120_120.jpg
+teaser: tesaser_400_250.jpg
 locale: en_US
-url: "https://mmistakes.github.io/jekyll-theme-skinny-bones"
+url: "https://jinsun-lee.github.io"
 feed:
   path: atom.xml
 
@@ -26,15 +26,15 @@ plugins:
 
 # Site owner
 owner:
-  name: "Michael Rose"
-  web: "https://mademistakes.com"
-  twitter: "mmistakes"
-  bio: "Just another boring, tattooed, time traveling designer."
-  avatar: "bio-photo.jpg" # 160x160 px image for author byline
+  name: "Jinsun-Lee"
+  web: "withire32@kakao.com"
+  twitter: 
+  bio: "Just a developer who wants to be good at what I love to do."
+  avatar: "jinsun_160_160.jpg" # 160x160 px image for author byline
   google:
-    plus: "+MichaelRoseDesign"
-    ad-client: "ca-pub-7328585512091257"
-    ad-slot: 3049671934
+    plus: #"+MichaelRoseDesign"
+    ad-client: #"ca-pub-7328585512091257"
+    ad-slot: #3049671934
   disqus-shortname:
 
 

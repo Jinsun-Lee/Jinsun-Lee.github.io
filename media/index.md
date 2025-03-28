@@ -1,9 +1,9 @@
 ---
 layout: archive
-title: "Sample Media Gallery"
-date: 2014-05-30T11:40:45-04:00
+title: "Timeline"
+date: 2025-03-29T11:40:45-04:00
 modified:
-excerpt: "An archive of media posts, perfect for portfolios and galleries."
+excerpt: "주요 활동에 대한 내용을 포함하고 있습니다."
 tags: []
 image:
   feature:

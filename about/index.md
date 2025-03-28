@@ -1,8 +1,8 @@
 ---
 layout: article
 title: "About"
-date: 2014-06-02T09:44:20-04:00
-modified: 2014-08-27T14:56:44-04:00
+date: 2025-03-29T09:44:20-04:00
+modified: 2025-03-29T14:56:44-04:00
 excerpt: "This is the Skinny Bones about page."
 image:
   feature:
@@ -12,6 +12,7 @@ share: false
 ads: false
 ---
 
-This is a work in progress.
+안녕하세요. 좋아하는 것을 잘하고 싶은 이진선입니다.
 
-Just a little something I'm using to jump start a site refresh. I like to think of it as a starter for building your own Jekyll site. I purposely keep the styling minimal and bare to make it easier to add your own flare and markup.
+I frequently work with C++, python, C and markdown.  
+Computer Vision and Reinforcement Learning are just tools to me; they are means to achieve broader goals and solve complex problems.
