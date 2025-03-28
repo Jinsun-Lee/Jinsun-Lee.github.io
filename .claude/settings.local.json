@@ -1,0 +1,7 @@
+{
+  "permissions": {
+    "allow": [
+      "Bash(GIT_AUTHOR_DATE=\"2025-03-29 00:01:45 +0900\" GIT_COMMITTER_DATE=\"2025-03-29 00:01:45 +0900\" git commit -m \"[feat] 새로운 테마 적용\")"
+    ]
+  }
+}
