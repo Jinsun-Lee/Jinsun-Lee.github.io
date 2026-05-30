@@ -1,0 +1,37 @@
+<!doctype html>
+<html lang="ko">
+  <head>
+    <meta charset="UTF-8" />
+    <meta name="viewport" content="width=device-width, initial-scale=1.0" />
+    <title>Avatar Parts Test</title>
+    <style>
+      body { margin: 0; font-family: system-ui, sans-serif; overflow: hidden; }
+      #view { position: fixed; inset: 0; z-index: 0; }
+      #panel {
+        position: fixed; top: 0; left: 0; z-index: 10;
+        width: 250px; max-height: 100vh; overflow: auto;
+        background: rgba(255, 255, 255, 0.92); padding: 10px 12px;
+        font-size: 13px; box-shadow: 2px 0 8px rgba(0,0,0,.1);
+      }
+      #panel h3 { margin: 0 0 8px; font-size: 14px; }
+      #panel .actions { display: flex; gap: 6px; margin: 4px 0 6px; }
+      #panel .row { display: flex; align-items: center; gap: 6px; padding: 3px 0; cursor: pointer; }
+      #panel .row.group { font-weight: 600; background: rgba(0,0,0,0.05); border-radius: 3px; padding: 3px 4px; margin-top: 2px; }
+      #panel .row.part { padding-left: 16px; }
+      #panel .row.off { opacity: 0.32; }
+      #panel .row .nm { user-select: none; }
+      #panel .sw { width: 13px; height: 13px; border-radius: 3px; flex: 0 0 auto; border: 1px solid rgba(0,0,0,0.2); }
+      #panel .nm { flex: 1; white-space: nowrap; overflow: hidden; text-overflow: ellipsis; }
+      #panel .model { border-top: 1px solid #ddd; padding-top: 6px; margin-top: 8px; }
+      #panel .model-head { font-weight: 700; margin-bottom: 2px; }
+      #panel .muted { color: #999; font-weight: 400; font-size: 11px; }
+      #panel button { cursor: pointer; font-size: 12px; padding: 2px 6px; }
+      #hint { color: #777; font-size: 11px; margin-top: 8px; line-height: 1.4; }
+    </style>
+  </head>
+  <body>
+    <div id="view"></div>
+    <div id="panel"><h3>Avatar parts</h3></div>
+    <script type="module" src="/src/parts-test.ts"></script>
+  </body>
+</html>
