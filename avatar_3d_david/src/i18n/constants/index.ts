@@ -15,4 +15,4 @@ export const LOCALES = {
   }
 >;
 
-export const LOCALE_DEFAULT: keyof typeof LOCALES = "ko";
+export const LOCALE_DEFAULT: keyof typeof LOCALES = "en";
