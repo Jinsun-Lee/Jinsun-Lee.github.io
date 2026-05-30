@@ -21,6 +21,7 @@ const props = defineProps<{
   preview?: ProjectPreview;
   locked?: boolean;
   period?: string;
+  href?: string;
 }>();
 
 onMounted(async () => {
@@ -88,7 +89,7 @@ onUnmounted(() => {
     data-cursor="arrow-external"
     data-hoversound="hover"
     external
-    :href="social[0].url"
+    :href="props.href"
     :aria-label="t('private-project')"
   >
     <div class="preview-card-top preview-card-top-empty preview-card-top-locked">

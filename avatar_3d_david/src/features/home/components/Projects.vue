@@ -9,15 +9,15 @@ import { t } from "../../../i18n/utils/translate";
 
 import type { ProjectPreview } from "../../../content/types";
 
-const privatePeriods = computed(() => {
+const privateProjects = computed(() => {
   const ongoing = locale.value === "ko" ? "현재" : "Now";
   return [
-    "2020.02 - 2020.12",
-    "2021.03 - 2021.08",
-    "2022.02 - 2022.12",
-    "2022.12 - 2025.02",
-    "2025.10 - 2026.04",
-    `2026.04 - ${ongoing}`,
+    { period: "2020.02 - 2020.12", url: "https://github.com/Jinsun-Lee/project-smart-door-lock" },
+    { period: "2021.03 - 2021.08", url: "https://github.com/Jinsun-Lee/project-rail-wear" },
+    { period: "2022.02 - 2022.12", url: "https://github.com/Jinsun-Lee/project-guidance-robot" },
+    { period: "2022.12 - 2025.02", url: "https://github.com/Jinsun-Lee/ros2_simulation_ws" },
+    { period: "2025.10 - 2026.04", url: "https://github.com/Jinsun-Lee/ros2_arm_rl" },
+    { period: `2026.04 - ${ongoing}`, url: "https://github.com/Jinsun-Lee/project-soc-ppa-analyzer" },
   ];
 });
 
@@ -54,7 +54,13 @@ onMounted(loadPreviews);
     <div class="grid">
       <div class="projects-cards">
         <PreviewCard v-for="preview in loadedPreviews" :key="preview.title" :preview="preview" />
-        <PreviewCard v-for="period in privatePeriods" :key="period" locked :period="period" />
+        <PreviewCard
+          v-for="item in privateProjects"
+          :key="item.period"
+          locked
+          :period="item.period"
+          :href="item.url"
+        />
       </div>
     </div>
   </div>
@@ -96,7 +102,7 @@ onMounted(loadPreviews);
     }
 
     @include mixins.mq("lg") {
-      grid-column: 3 / 8;
+      grid-column: 2 / 8;
     }
 
     &-copy {
