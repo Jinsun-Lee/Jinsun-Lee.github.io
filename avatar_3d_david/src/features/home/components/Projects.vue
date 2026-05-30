@@ -158,12 +158,12 @@ onMounted(loadPreviews);
     }
 
     @include mixins.mq("lg") {
-      grid-template-columns: repeat(auto-fit, minmax(300px, 1fr));
-      grid-column: 3 / span 8;
+      grid-template-columns: repeat(3, 1fr);
+      grid-column: 2 / span 10;
     }
 
     @include mixins.mq("xl") {
-      grid-template-columns: repeat(auto-fit, minmax(360px, 1fr));
+      grid-template-columns: repeat(3, 1fr);
     }
   }
 }
