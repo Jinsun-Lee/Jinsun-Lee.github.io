@@ -2,6 +2,9 @@ const AVATAR_URL =
   location.hostname === "localhost" || location.hostname === "127.0.0.1"
     ? "http://localhost:3000/"
     : "/design.html";
+
+// 디자인: 새 탭으로 3D 앱 열기
+document.getElementById("designLink")?.setAttribute("href", AVATAR_URL);
 const NAME = "진선";
 
 // 인사말 풀 (실제 claude.ai 패턴) — 시간대별, 세션 동안 고정
@@ -225,14 +228,12 @@ function renderChat(slug) {
 function parseHash() {
   const h = location.hash || "#/";
   if (h.startsWith("#/c/")) return { view: "chat", slug: decodeURIComponent(h.slice(4)) };
-  if (h === "#/design") return { view: "design" };
   return { view: "home" };
 }
 
 function setActive({ view, slug }) {
   document.querySelectorAll(".nav-item").forEach((a) => a.classList.remove("active"));
   if (view === "home") document.querySelector('[data-route="home"]')?.classList.add("active");
-  else if (view === "design") document.querySelector('[data-route="design"]')?.classList.add("active");
   else if (view === "chat") document.querySelector(`[data-slug="${slug}"]`)?.classList.add("active");
 }
 
@@ -241,10 +242,6 @@ function render() {
   document.body.dataset.view = route.view;
   document.querySelectorAll(".view").forEach((v) => (v.hidden = v.dataset.view !== route.view));
 
-  if (route.view === "design") {
-    const frame = document.getElementById("designFrame");
-    if (frame.getAttribute("src") !== AVATAR_URL) frame.setAttribute("src", AVATAR_URL);
-  }
   if (route.view === "chat") renderChat(route.slug);
   setActive(route);
   closeDrawer();
