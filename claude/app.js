@@ -1,4 +1,7 @@
-const AVATAR_URL = "http://localhost:4322/";
+const AVATAR_URL =
+  location.hostname === "localhost" || location.hostname === "127.0.0.1"
+    ? "http://localhost:3000/"
+    : "/design.html";
 const NAME = "진선";
 
 // 인사말 풀 (실제 claude.ai 패턴) — 시간대별, 세션 동안 고정

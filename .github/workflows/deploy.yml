@@ -32,11 +32,20 @@ jobs:
       - run: npm ci
       - run: npm run build
 
+      - name: Assemble site (Claude at root, 3D app at /design.html)
+        working-directory: ${{ github.workspace }}
+        run: |
+          rm -rf _site
+          mkdir _site
+          cp -r avatar_3d_david/dist/. _site/
+          mv _site/index.html _site/design.html
+          cp -r claude/. _site/
+
       - uses: actions/configure-pages@v5
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: avatar_3d_david/dist
+          path: _site
 
   deploy:
     needs: build
