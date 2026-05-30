@@ -1,14 +1,25 @@
 <script setup lang="ts">
-import { ref, watch, onMounted } from "vue";
+import { ref, watch, onMounted, computed } from "vue";
 import { previews } from "../../../content/projects/previews";
 import { locale } from "../../../i18n/store";
 import PreviewCard from "../../projects/components/PreviewCard.vue";
 import NotchSection from "../../../components/NotchSection.vue";
 import Banner from "../../../components/Banner.vue";
 import { t } from "../../../i18n/utils/translate";
-import { isFeatureEnabled } from "../../../utils/features";
 
 import type { ProjectPreview } from "../../../content/types";
+
+const privatePeriods = computed(() => {
+  const ongoing = locale.value === "ko" ? "현재" : "Now";
+  return [
+    "2020.02 - 2020.12",
+    "2021.03 - 2021.08",
+    "2022.02 - 2022.12",
+    "2022.12 - 2025.02",
+    "2025.10 - 2026.04",
+    `2026.04 - ${ongoing}`,
+  ];
+});
 
 const loadedPreviews = ref<ProjectPreview[] | null>(null);
 
@@ -43,7 +54,7 @@ onMounted(loadPreviews);
     <div class="grid">
       <div class="projects-cards">
         <PreviewCard v-for="preview in loadedPreviews" :key="preview.title" :preview="preview" />
-        <PreviewCard v-if="isFeatureEnabled('startProject')" />
+        <PreviewCard v-for="period in privatePeriods" :key="period" locked :period="period" />
       </div>
     </div>
   </div>
