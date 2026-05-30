@@ -223,19 +223,20 @@ svg {
   right: 18px;
   color: var(--muted-2);
 }
-.help-btn svg {
-  stroke-width: 1.5;
+.help-btn svg { stroke-width: 1.5; }
+.help-btn svg circle {
   transform-box: fill-box;
   transform-origin: center;
-  animation: ghost-float 2.6s ease-in-out infinite;
+  animation: ghost-look 3s ease-in-out infinite;
 }
 .help-btn:hover { color: var(--text); }
-@keyframes ghost-float {
-  0%, 100% { transform: translateY(0); }
-  50% { transform: translateY(-1.6px); }
+@keyframes ghost-look {
+  0%, 25% { transform: translateX(-1.1px); }
+  50%, 75% { transform: translateX(1.1px); }
+  100% { transform: translateX(-1.1px); }
 }
 @media (prefers-reduced-motion: reduce) {
-  .help-btn svg { animation: none; }
+  .help-btn svg circle { animation: none; }
 }
 body[data-view="chat"] .help-btn { display: none; }
 
