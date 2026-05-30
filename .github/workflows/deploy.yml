@@ -19,7 +19,7 @@ jobs:
     runs-on: ubuntu-latest
     defaults:
       run:
-        working-directory: ./main
+        working-directory: ./avatar_3d_david
     steps:
       - uses: actions/checkout@v4
 
@@ -27,7 +27,7 @@ jobs:
         with:
           node-version: '24'
           cache: 'npm'
-          cache-dependency-path: main/package-lock.json
+          cache-dependency-path: avatar_3d_david/package-lock.json
 
       - run: npm ci
       - run: npm run build
@@ -36,7 +36,7 @@ jobs:
 
       - uses: actions/upload-pages-artifact@v3
         with:
-          path: main/dist
+          path: avatar_3d_david/dist
 
   deploy:
     needs: build
