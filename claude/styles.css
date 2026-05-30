@@ -230,7 +230,7 @@ svg {
 }
 .help-btn:hover { color: var(--text); }
 .help-btn:hover svg { animation: ghost-float 2.6s ease-in-out infinite; }
-.help-btn:hover svg circle { animation: ghost-look 4s ease-in-out infinite; }
+.help-btn:hover svg circle { animation: ghost-look 3s ease-in-out infinite; }
 @keyframes ghost-float {
   0%, 100% { transform: translateY(0); }
   50% { transform: translateY(-1.6px); }
@@ -239,7 +239,7 @@ svg {
   0%, 15%   { transform: translate(-1.1px, 0); }
   25%, 40%  { transform: translate(1.1px, 0); }
   50%, 65%  { transform: translate(0, -1.1px); }
-  75%, 90%  { transform: translate(0, 1.1px); }
+  75%, 90%  { transform: translate(0, 0); }
   100%      { transform: translate(-1.1px, 0); }
 }
 @media (prefers-reduced-motion: reduce) {

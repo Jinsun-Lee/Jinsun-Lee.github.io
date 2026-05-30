@@ -1,0 +1,14 @@
+<svg xmlns="http://www.w3.org/2000/svg" viewBox="0 0 100 100">
+  <g stroke="#d97757" stroke-width="9" stroke-linecap="round">
+    <line x1="50" y1="50" x2="50" y2="12"/>
+    <line x1="50" y1="50" x2="50" y2="12" transform="rotate(36 50 50)"/>
+    <line x1="50" y1="50" x2="50" y2="12" transform="rotate(72 50 50)"/>
+    <line x1="50" y1="50" x2="50" y2="12" transform="rotate(108 50 50)"/>
+    <line x1="50" y1="50" x2="50" y2="12" transform="rotate(144 50 50)"/>
+    <line x1="50" y1="50" x2="50" y2="12" transform="rotate(180 50 50)"/>
+    <line x1="50" y1="50" x2="50" y2="12" transform="rotate(216 50 50)"/>
+    <line x1="50" y1="50" x2="50" y2="12" transform="rotate(252 50 50)"/>
+    <line x1="50" y1="50" x2="50" y2="12" transform="rotate(288 50 50)"/>
+    <line x1="50" y1="50" x2="50" y2="12" transform="rotate(324 50 50)"/>
+  </g>
+</svg>
